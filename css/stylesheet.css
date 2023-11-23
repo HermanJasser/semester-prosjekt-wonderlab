@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Roboto:wght@400;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --orange: #FF9F59;
+    --beige: #F8EBDF;
+    --dmsans: 'DM Sans', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+    --inline-margin-phone: 40px;
+    --inline-margin-tablet-desktop: 60px;
+    --inline-margin-big-desktop: 100px;
+}
+
+body{
+    background-color: var(--white);
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+}
+h1, h2, h3{
+    font-family: var(--dmsans);
+    font-weight: 700;
+    margin: 0;
+}
+
+p{
+    font-family: var(--roboto);
+    margin: 0;
+    font-size: 20px;
+}
+
+.btn{
+    text-align: center;
+    text-decoration: none;
+    color: var(--black);
+    width: 140px;
+    font-family: var(--roboto);
+    font-weight: 500;
+    font-size: 22px;
+    padding: 12px 20px;
+    border: solid 4px var(--orange);
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background-color: var(--orange);
+}
+.logo{
+    height: 80px;
+    
+}
+/******************************
+
+            header
+
+******************************/
+header{
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-background{
+    position: absolute;
+    width: 100%;
+    background-color: var(--beige);
+    border-bottom: solid 4px var(--orange);
+    height: 130px;
+}
+
+header > a{
+    margin-left: var(--inline-margin-phone);
+    
+}
+
+header > label > p, #close-label p{
+    font-family: var(--dmsans);
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0 10px 0 0;
+}
+
+.fa-bars, .fa-xmark{
+    font-size: 30px;
+}
+
+header > label, #close-label{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: var(--inline-margin-phone);
+}
+
+#hamburger-checkbox:checked ~ label{
+    opacity: 0;
+}
+
+header > label {
+    z-index: 92;
+}
+
+#close-label{
+  position: absolute;
+  right: var(--inline-margin-phone);
+  margin: 0;
+    display: none;
+  z-index: 91;
+}
+
+#hamburger-checkbox:checked ~ #close-label{
+    display: flex;
+}
+
+/****
+hamburger meny
+****/
+
+header > a, label, input, div {
+    z-index: 90;
+}
+
+.drop-down-menu{
+    position: absolute;
+    background-color: var(--beige);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    top: -100%;
+    flex-direction: column;
+    z-index: 50;
+    
+}
+
+#hamburger-checkbox{
+    display: none;
+}
+
+#hamburger-checkbox ~ .drop-down-menu{
+transition: all ease-in-out 500ms;
+}
+
+#hamburger-checkbox:checked ~ .drop-down-menu{
+transition: all ease-in-out 500ms;
+top: 130px;
+}
+
+.drop-down-menu > a{
+    color: var(--black);
+    text-decoration: none;
+    font-family: var(--dmsans);
+    font-weight: 700;
+    font-size: 35px;
+    margin: 20px 0 0 20px;
+}
+
+.drop-down-menu > a:hover{
+    text-decoration: underline;
+}
+
+#donate-btn{
+    font-family: var(--roboto);
+    font-weight: 500;
+    font-size: 22px;
+    align-self: center;
+    margin-top: 40px;
+}
+
+
+
+#donate-btn:hover{
+    text-decoration: none;
+}
+
+
+
+/******************************
+
+            main
+            
+******************************/
+
+/****
+main index
+****/
+
+/*hero*/
+.hero-del-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-del-1 > h1{
+    font-size: 40px;
+    margin:20px 0;
+}
+
+.hero-del-1 > p{
+    text-align: center;
+    margin: 0 100px;
+    font-weight: 500;
+}
+
+.hero-del-1 > a{
+margin: 20px 0;
+}
+
+.hero-del-2 > img{
+    width: 100%;
+}
+
+/*Exhibition spaces*/
+#main-index > h2{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.exhibition-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 var(--inline-margin-phone) 0 var(--inline-margin-phone) ;
+}
+
+.card{
+border: solid 2px var(--orange);
+border-radius: 15px;
+text-align: center;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+z-index: 30;
+
+
+}
+
+.card > img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card p{
+    margin:20px;
+}
+
+/*Night at the museum*/
+.events-1 > img{
+    width: 130%;
+}
+
+.events-1{
+    overflow: hidden;
+}
+
+.events-2 > h2, p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.events-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 var(--inline-margin-phone);
+}
+
+.events-2 > a{
+    width: 170px;
+    margin: 20px 0;
+}
+
+
+
+
+/******************************
+
+            footer
+            
+******************************/
+footer{
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px var(--inline-margin-phone);
+}/**/
+
+footer > div > p{
+    text-align: start;
+    margin-top: 5px;
+}
+
+.bold-p{
+    font-weight: 700;
+}
+
+/******************************
+
+            mediaquieries
+            
+******************************/
+
+
+/****
+dette er for tablet versjonen
+****/
+@media screen and (min-width:576px){
+    /*body{
+        background-color: yellow;
+    }/**/
+
+    /*header*/
+    header > a {
+        margin: 20px 0 20px var(--inline-margin-tablet-desktop);
+    }
+
+    header > label, #close-label{
+        margin-right: var(--inline-margin-tablet-desktop);
+    }
+
+    #close-label{
+    right: var(--inline-margin-tablet-desktop);
+    }
+
+    /*main index*/
+    .exhibition-cards{
+        padding: 0 var(--inline-margin-tablet-desktop) 0px var(--inline-margin-tablet-desktop) ;
+    }
+
+    
+    .events-2{
+        margin: 0 var(--inline-margin-tablet-desktop);
+    }
+    
+   
+
+    /*footer*/
+    footer{
+        padding: 40px var(--inline-margin-tablet-desktop);
+    }
+
+
+
+
+
+}
+
+/****
+dette er for desktop
+****/
+
+@media screen and (min-width:768px){
+
+    /*body{
+        background-color:yellowgreen;
+    }/**/
+
+    .logo{
+        height:100px;
+    }
+
+    /*
+    header
+    */
+
+    header{
+        width: 100%;
+        background-color: var(--beige);
+        border-bottom: solid 4px var(--orange);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+       justify-content: space-between;
+        align-items:stretch;
+    }
+    
+    #header-background{
+      display: none;
+    }
+    
+    header > a > img{
+        margin: 0;
+        
+    }
+
+    header > a {
+        width: 115px;
+    }
+    
+    header > label, #close-label{
+        display: none;
+    }
+
+    #hamburger-checkbox:checked ~ #close-label{
+        disPlay: none;
+    }
+    
+    /****
+    hamburger meny
+    ****/
+    
+    #hamburger-checkbox ~ .drop-down-menu{
+        transition:none;
+    }
+    #hamburger-checkbox:checked ~ .drop-down-menu{
+        transition:none;
+    }
+
+    .drop-down-menu{
+        position: static;
+        background:none;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        z-index: 99;
+        margin: 0 var(--inline-margin-tablet-desktop) 20px var(--inline-margin-tablet-desktop);
+        justify-content: space-between;
+        
+    }
+    
+    .drop-down-menu > a{
+        font-weight: 700;
+        font-size:16px;
+        margin: 0;
+    }
+
+    #donate-btn{
+       position: absolute;
+       top: 30px;
+       right: var(--inline-margin-tablet-desktop);
+       margin-top: 0;
+    }
+
+    #donate-btn:hover{
+        text-decoration: none;
+    }
+        /***
+        main index
+        ***/
+
+    .index-hero{
+        display: flex;
+    }
+
+    .hero-del-2, .hero-del-1{
+        width: 50%;
+    }
+
+    .hero-del-1{
+        order: 1;
+        
+        justify-content: center;
+    }
+    
+    .hero-del-1 > h1{
+        font-size: 30px;
+        margin:20px 0;
+    }
+    
+    .hero-del-1 > p{
+        margin: 0 50px;
+        font-size: 18px;
+    }
+    
+    .hero-del-1 > a{
+    margin: 20px 0;
+    }
+    
+
+
+    .exhibition-cards{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:stretch;
+    }
+
+    .card{
+        width: 31%;
+    }
+
+    .card > img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /*index events*/
+    .index-event{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .events-1, .events-2{
+        width: 50%;
+    }
+    .events-1{
+        order: 1;
+    }
+
+    .events-2 > p{
+        font-size: 18px;
+        margin: 10px 20px;
+        
+    }
+    
+    .events-2 > h2{
+        margin: 0;
+    }
+    
+    .events-2{
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .events-2 > a{
+        width: 170px;
+        margin: 10px 0;
+    }
+
+    /*
+    footer
+    */
+    footer{
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .bold-p{
+        font-weight: 700;
+    }
+
+
+
+
+
+}
+
+/*Dette er for en stor dekstop skjerm*/
+@media screen and (min-width:1100px){
+    /*body{
+        background-color: lightblue;
+    }/**/
+
+    
+    /*headeren*/
+    #donate-btn{
+        right: var(--inline-margin-big-desktop);
+     }
+
+     .drop-down-menu > a{
+        font-size:22px;
+    }
+
+    .drop-down-menu{
+       
+        margin: 0 var(--inline-margin-big-desktop) 20px var(--inline-margin-big-desktop);
+    }
+
+    header > a {
+        margin: 20px 0 20px var(--inline-margin-big-desktop);
+    }
+
+    /*********
+    main index
+    *********/
+    .exhibition-cards{
+        padding: 0 var(--inline-margin-big-desktop) 20px var(--inline-margin-big-desktop) ;
+    }
+    /*hero*/
+    
+    .hero-del-1 > h1{
+        font-size: 40px;
+        margin:30px 0;
+    }
+    
+    .hero-del-1 > p{
+        margin: 0 100px;
+        font-size: 20px;
+    }
+    
+    .hero-del-1 > a{
+    margin: 30px 0;
+    }
+
+    /*index events*/
+
+    .events-2 > p{
+        font-size: 20px;
+        margin: 10px var(--inline-margin-big-desktop);
+    }
+
+    /*footer*/
+    footer{
+        padding: 40px var(--inline-margin-big-desktop);
+    }
+
+
+}
