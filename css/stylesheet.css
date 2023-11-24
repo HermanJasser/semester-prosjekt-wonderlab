@@ -455,10 +455,19 @@ dette er for tablet versjonen
     .explore-hero-2 {
         margin: 0 var(--inline-margin-tablet-desktop);
     }
-    
-   
-   
 
+    .for-teachers{
+        padding: 20px var(--inline-margin-tablet-desktop) ;
+    }
+
+    .kids{
+        padding: 20px var(--inline-margin-tablet-desktop);
+    }
+
+    .for-researchers{
+        padding: 20px var(--inline-margin-tablet-desktop);
+    }
+    
     /*footer*/
     footer{
         padding: 40px var(--inline-margin-tablet-desktop);
@@ -675,13 +684,8 @@ dette er for desktop
     /*for kids*/
 
     .kids{
-        width: 100vw;
-        padding: 20px var(--inline-margin-tablet-desktop);
-        background-color: var(--beige);
-        margin-top: 20px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
         grid-template-areas: 
         "for-kids img"
         "for-kids holiday-club"
@@ -689,13 +693,10 @@ dette er for desktop
         column-gap: 40px;
     }
 
-
-
-
     .kids > img{
-     width: 100%;
-     margin-bottom: 0;
+     margin-bottom: 20px;
      grid-area: img;
+     justify-self: center;
     }
 
     
@@ -708,6 +709,10 @@ dette er for desktop
         grid-area: holiday-club;
     }
 
+    .kids p{
+        font-size: 18px;
+    }
+
 
     
     .kids h2, .kids h3{
@@ -717,9 +722,58 @@ dette er for desktop
     .kids a{
         margin-top: 20px;
         align-self: center;
-        width: 160px;
         grid-area: btn;
         justify-self: center;
+    }
+
+
+    /*for teachers*/
+    
+    .for-teachers{
+        display: flex;
+        flex: row;
+    }
+
+    .teachers-1{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+    }
+    .teachers-2{
+        width: 50%;
+        padding: 0 20px;
+    }
+    
+    .teachers-2 p{
+        font-size: 18px;
+    }
+
+    /*for researchers*/
+    .for-researchers{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .researchers-1{
+        width: 50%;
+       display: grid;
+    
+        
+        
+    }
+    .researchers-1 img{
+        width: 100%;
+        align-self: center;
+    }
+    
+    .researchers-2{
+        width: 50%;
+        padding: 0 20px;
+        
+    }
+    
+    .researchers-2 p{
+        font-size: 18px;
     }
 
     /*
@@ -816,7 +870,67 @@ dette er for desktop
         font-size: 20px;
     }
 
+    /*for kids*/
+    .kids{
+        padding: 20px var(--inline-margin-big-desktop);
+        column-gap: 100px;
+    }
 
+    .kids > img{
+     max-width: 470px;
+    }
+
+    .kids p{
+        font-size: 20px;
+    }
+
+    /*for teachers*/
+
+   .for-teachers{
+    padding: 20px var(--inline-margin-big-desktop);
+   }
+
+   .teachers-1 img {
+       max-width: 500px;
+   }
+
+   .teachers-2{
+       padding: 0 40px;
+       justify-content: center;
+   }
+
+    .teachers-2 p{
+        font-size: 20px;
+    }
+
+    /*for researchers*/
+   
+    .for-researchers{
+        padding: 20px var(--inline-margin-big-desktop);
+
+    }
+    .researchers-1{
+        width: 50%;
+       display: grid;
+    
+        
+        
+    }
+    .researchers-1 img{
+        justify-self: center;
+        max-width: 550px;
+    }
+    
+    .researchers-2{
+        width: 50%;
+        padding: 0 40px;
+        justify-content: center;
+        
+    }
+    
+    .researchers-2 p{
+        font-size: 20px;
+    }
     /*footer*/
     footer{
         padding: 40px var(--inline-margin-big-desktop);
