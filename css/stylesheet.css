@@ -125,7 +125,7 @@ header > label {
 hamburger meny
 ****/
 
-header > a, label, input, div {
+header  a, header label, header input, header div {
     z-index: 90;
 }
 
@@ -264,7 +264,7 @@ z-index: 30;
     overflow: hidden;
 }
 
-.events-2 > h2, p{
+.events-2 > h2, .events-2 > p{
     text-align: center;
     margin-top: 20px;
 }
@@ -281,6 +281,111 @@ z-index: 30;
     margin: 20px 0;
 }
 
+/****
+main explore
+****/
+
+
+/*hero*/
+.explore-hero-1 > img{
+    width:100%;
+   
+
+}
+
+.explore-hero-2 {
+    margin: 0 var(--inline-margin-phone);
+}
+
+.explore-hero-2 > h1{
+    margin-top: 20px;
+}
+
+.explore-hero-2 > p{
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/*for kids*/
+.kids{
+    width: 100vw;
+    padding: 20px var(--inline-margin-phone);
+    background-color: var(--beige);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+.kids > img{
+ width: 100%;
+ margin-bottom: 20px;
+}
+
+.for-kids-text{
+    margin-bottom: 20px;
+}
+
+.kids h2, .kids h3{
+    margin-bottom: 20px;
+}
+
+.kids a{
+    margin-top: 20px;
+    align-self: center;
+    width: 160px;
+}
+
+/* for teachers*/
+.for-teachers{
+    padding: 20px var(--inline-margin-phone) ;
+}
+
+.teachers-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.teachers-2 h2, .teachers-2 p, .teachers-2 a{
+    margin-top: 20px;
+}
+
+.teachers-2 a{
+    align-self: center;
+    width: 160px;
+}
+
+/*for researchers*/
+.for-researchers{
+    width: 100vw;
+    padding: 20px var(--inline-margin-phone);
+    background-color: var(--beige);
+    margin-bottom: 20px;
+
+}
+
+.researchers-1 img{
+    width: 100%;
+}
+
+.researchers-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.researchers-2 a{
+    align-self: center;
+    width: 160px;
+}
+
+.researchers-2 h2, .researchers-2 p, .researchers-2 a{
+    margin-top: 20px;
+}
+
+
+
+
+
+
 
 
 
@@ -290,6 +395,7 @@ z-index: 30;
             
 ******************************/
 footer{
+    height: 450px;
     background-color: var(--beige);
     display: flex;
     flex-direction: column;
@@ -345,6 +451,12 @@ dette er for tablet versjonen
         margin: 0 var(--inline-margin-tablet-desktop);
     }
     
+    
+    .explore-hero-2 {
+        margin: 0 var(--inline-margin-tablet-desktop);
+    }
+    
+   
    
 
     /*footer*/
@@ -530,6 +642,86 @@ dette er for desktop
         margin: 10px 0;
     }
 
+    /*for explore siden*/ 
+    
+    .explore-hero{
+        display: flex;
+        flex-direction: row;
+        margin: 0 var(--inline-margin-tablet-desktop);
+    }
+    .explore-hero-1{
+        order: 1;
+    }
+
+
+    .explore-hero-2 {
+        margin: 0;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .explore-hero-2 > h1{
+        text-align: center;
+        font-size: 26px;
+        margin: 0;
+    }
+    
+    .explore-hero-2 > p{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    /*for kids*/
+
+    .kids{
+        width: 100vw;
+        padding: 20px var(--inline-margin-tablet-desktop);
+        background-color: var(--beige);
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "for-kids img"
+        "for-kids holiday-club"
+        "btn holiday-club";
+        column-gap: 40px;
+    }
+
+
+
+
+    .kids > img{
+     width: 100%;
+     margin-bottom: 0;
+     grid-area: img;
+    }
+
+    
+    .for-kids-text{
+        margin-bottom: 0;
+        grid-area: for-kids;
+    }
+
+    .holiday-club{
+        grid-area: holiday-club;
+    }
+
+
+    
+    .kids h2, .kids h3{
+        margin-bottom: 20px;
+    }
+    
+    .kids a{
+        margin-top: 20px;
+        align-self: center;
+        width: 160px;
+        grid-area: btn;
+        justify-self: center;
+    }
+
     /*
     footer
     */
@@ -539,6 +731,10 @@ dette er for desktop
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-start;
+    }
+
+    footer > div > p{
+        font-size: 18px;
     }
 
     .bold-p{
@@ -605,9 +801,29 @@ dette er for desktop
         margin: 10px var(--inline-margin-big-desktop);
     }
 
+    /*main explore*/
+    .explore-hero{
+        margin: 0 var(--inline-margin-big-desktop);
+    }
+    .explore-hero-2 {
+        padding: 0 60px;
+    }
+    .explore-hero-2 > h1{
+        font-size: 50px;
+    }
+    
+    .explore-hero-2 > p{
+        font-size: 20px;
+    }
+
+
     /*footer*/
     footer{
         padding: 40px var(--inline-margin-big-desktop);
+    }
+
+    footer > div > p{
+        font-size: 20px;
     }
 
 
