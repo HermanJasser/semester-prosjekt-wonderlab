@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/stylesheet.css" />
+    <script
+      src="https://kit.fontawesome.com/4c9767c9c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contact page</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-background"></div>
+      <a href="./index.html"
+        ><img class="logo" src="./img/logo-wonderlab.svg" alt="WonderLab logo"
+      /></a>
+      <input id="hamburger-checkbox" type="checkbox" />
+      <label for="hamburger-checkbox">
+        <span>Menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <div id="close-label">
+        <p>Close</p>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <nav class="drop-down-menu">
+        <a href="./explore.html">Explore</a>
+        <a href="./exhibition-spaces.html">Exhibition spaces</a>
+        <a href="./special-events.html"> Special events</a>
+        <a href="./visit.html">Visit</a>
+        <a href="./get-involved.html">Get involved</a>
+        <a href="./contact-page.html">Contact us</a>
+
+        <a id="donate-btn" class="btn" href="./donate.html">Donate</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contact-hero"></div>
+      <div class="all-contact-container">
+        <div class="contact-form-container">
+          <form action="./contact-page.html" class="contact-form">
+            <h1>Contact us</h1>
+            <input
+              id="full-name"
+              type="text"
+              placeholder="Full name"
+              required
+            />
+            <input id="phone" type="tel" placeholder="Phone" required />
+            <input id="email" type="email" placeholder="Email" required />
+            <select id="topic" required>
+              <option value="topic" disabled selected hidden>Topic</option>
+              <option value="holiday-club">Holiday club</option>
+              <option value="school">School</option>
+              <option value="get-involved">Get involved</option>
+              <option value="guided-tour">Guided tour</option>
+              <option value="other">Other</option>
+            </select>
+            <textarea
+              id="message"
+              placeholder="Message"
+              cols="30"
+              rows="7"
+              required
+            ></textarea>
+            <input class="btn" type="submit" value="Submit" />
+          </form>
+        </div>
+
+        <div class="reach-us">
+          <h2>You can also reach us on:</h2>
+          <p class="bold-p">Email</p>
+          <p>Wonderlab@gmail.co.uk</p>
+          <p class="bold-p">Phone</p>
+          <p>+ 44 91919191</p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img class="logo" src="./img/logo-wonderlab.svg" alt="WonderLab logo" />
+      <div class="hours">
+        <p class="bold-p">Hours</p>
+        <p>Monday: closed</p>
+        <p>Tuesday - Thursday: 10:00 - 16:00</p>
+        <p>Friday: 10:00 – 19:00</p>
+        <p>Saturday: 9:00 – 16:00</p>
+        <p>Sunday: 9:00 – 13:00</p>
+      </div>
+      <div class="location">
+        <p class="bold-p">Location</p>
+        <p>
+          Oxford St, London W1B 3AG,
+          <br />
+          United Kingdom
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

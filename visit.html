@@ -1,150 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/stylesheet.css">
-    <script src="https://kit.fontawesome.com/4c9767c9c5.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/stylesheet.css" />
+    <script
+      src="https://kit.fontawesome.com/4c9767c9c5.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Visit</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="header-background"></div>
-        <a href="./index.html"><img class="logo" src="./img/logo-wonderlab.svg" alt="WonderLab logo"></a>
-        <input id="hamburger-checkbox" type="checkbox">
-        <label for="hamburger-checkbox">
-            <span>Menu</span>
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <div id="close-label">
-            <p>Close</p>
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-        
-        <nav class="drop-down-menu">
-            <a href="./explore.html">Explore</a>
-            <a href="./exhibition-spaces.html">Exhibition spaces</a>
-            <a href="./special-events.html"> Special events</a>
-            <a href="./visit.html">Visit</a>
-            <a href="./get-involved.html">Get involved</a>
-            <a href="./contact-page.html">Contact us</a>
-            
-            <a id="donate-btn" class="btn" href="./donate.html">Donate</a>
-        </nav>
+      <div id="header-background"></div>
+      <a href="./index.html"
+        ><img class="logo" src="./img/logo-wonderlab.svg" alt="WonderLab logo"
+      /></a>
+      <input id="hamburger-checkbox" type="checkbox" />
+      <label for="hamburger-checkbox">
+        <span>Menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <div id="close-label">
+        <p>Close</p>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <nav class="drop-down-menu">
+        <a href="./explore.html">Explore</a>
+        <a href="./exhibition-spaces.html">Exhibition spaces</a>
+        <a href="./special-events.html"> Special events</a>
+        <a href="./visit.html">Visit</a>
+        <a href="./get-involved.html">Get involved</a>
+        <a href="./contact-page.html">Contact us</a>
+
+        <a id="donate-btn" class="btn" href="./donate.html">Donate</a>
+      </nav>
     </header>
     <main>
-        <div class="visit-hero">
-            <picture>
-                <source media="(max-width: 768px)" srcset="./img/outside-museum-phone.jpg">
-                <img src="./img/outside-museum-desktop.jpg" alt="">
-            </picture>
-            <h1>Welcome to Wonderlab</h1>
+      <div class="visit-hero">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./img/outside-museum-phone.jpg"
+          />
+          <img src="./img/outside-museum-desktop.jpg" alt="" />
+        </picture>
+        <h1>Welcome to Wonderlab</h1>
+        <p>
+          At Wonderlab we invite you on a journey of exploration and discovery
+          in the fascinating world of science. Our museum is a hub of knowledge,
+          curiosity and innovation where visitors of all ages can engage with
+          the wonders of the universe.
+        </p>
+      </div>
+
+      <h2 class="practical-info-h2">Practical Information</h2>
+
+      <div class="practical-info">
+        <div class="location-div">
+          <input type="checkbox" id="location-checkbox" />
+          <label class="location-label-1" for="location-checkbox"
+            ><span>Location</span><i class="fa-solid fa-angle-down"></i
+          ></label>
+          <label class="location-label-2" for="location-checkbox"
+            ><span>Location</span><i class="fa-solid fa-angle-up"></i
+          ></label>
+          <div id="location-dropdown">
+            <div class="location-dropdown-div-1">
+              <p class="bold-p">Wonderlab is located at:</p>
+              <p>Oxford St, London W1B 3AG, United Kingdom</p>
+            </div>
+            <div class="location-dropdown-div-2">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.8862211630994!2d-0.14423248741535308!3d51.51530337169758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554c335c1%3A0xda2164b934c67c1a!2sOxford%20St%2C%20London%2C%20UK!5e0!3m2!1sen!2sno!4v1701178104492!5m2!1sen!2sno"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="price-div">
+          <input type="checkbox" id="price-checkbox" />
+          <label class="price-label-1" for="price-checkbox"
+            ><span>Price</span><i class="fa-solid fa-angle-down"></i
+          ></label>
+          <label class="price-label-2" for="price-checkbox"
+            ><span>Price</span><i class="fa-solid fa-angle-up"></i
+          ></label>
+          <div class="price-dropdown">
+            <p class="bold-p">The entrance is free for all</p>
             <p>
-                At Wonderlab we invite you on a journey of exploration and discovery in the fascinating world of science. 
-                Our museum is a hub of knowledge,
-                curiosity and innovation where visitors of all ages can engage with the wonders of the universe.
+              There are guided tours of the museum that leave every hour. These
+              tours are 70 Vbucks per person and include a handy printed guide
+              of the museum. If you would like to organise a guided tour for
+              your group of 6 or more people, please contact us to arrange the
+              tour.
             </p>
+            <a class="btn" href="./contact-page.html">Contact us</a>
+          </div>
         </div>
 
-        <h2 class="practical-info-h2">Practical Information</h2>
-
-        <div class="practical-info">
-            <div class="location-div">
-                <input type="checkbox" id="location-checkbox">
-                <label class="location-label-1" for="location-checkbox"><span>Location</span><i class="fa-solid fa-angle-down"></i></label>
-                <label class="location-label-2" for="location-checkbox"><span>Location</span><i class="fa-solid fa-angle-up"></i></label>
-                <div id="location-dropdown">
-                    <div class="location-dropdown-div-1">
-                        <p class="bold-p">Wonderlab is located at:</p>
-                        <p>Oxford St, London W1B 3AG, 
-                            United Kingdom
-                        </p>
-                    </div>
-                    <div class="location-dropdown-div-2">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.8862211630994!2d-0.14423248741535308!3d51.51530337169758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ad554c335c1%3A0xda2164b934c67c1a!2sOxford%20St%2C%20London%2C%20UK!5e0!3m2!1sen!2sno!4v1701178104492!5m2!1sen!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <div class="price-div">
-                <input type="checkbox" id="price-checkbox">
-                <label class="price-label-1" for="price-checkbox"><span>Price</span><i class="fa-solid fa-angle-down"></i></label>
-                <label class="price-label-2" for="price-checkbox"><span>Price</span><i class="fa-solid fa-angle-up"></i></label>
-                <div class="price-dropdown">
-                    <p class="bold-p">The entrance is free for all</p>
-                    <p>There are guided tours of the museum that leave every hour. These tours are 70 Vbucks per person and include a handy printed guide of the museum.
-                        If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.
-                    </p> 
-                    <a class="btn" href="./contact-page.html">Contact us</a>
-                </div>
-            </div>
-
-            <div class="hours-div">
-                <input type="checkbox" id="hours-checkbox">
-                <label class="hours-label-1" for="hours-checkbox"><span>Opening hours</span><i class="fa-solid fa-angle-down"></i></label>
-                <label class="hours-label-2" for="hours-checkbox"><span>Opening hours</span><i class="fa-solid fa-angle-up"></i></label>
-                <div class="hours-dropdown">
-                    <p>Monday: closed</p>
-                    <p>Tuesday - Thursday: 10:00 - 16:00</p>
-                    <p>Friday: 10:00 – 19:00</p>
-                    <p>Saturday: 9:00 – 16:00</p>
-                    <p>Sunday: 9:00 – 13:00</p>
-                </div>
-            </div>
-
-            <div class="accessibility-div">
-                <input type="checkbox" id="accessibility-checkbox">
-                <label class="accessibility-label-1" for="accessibility-checkbox"><span>Accessibility</span><i class="fa-solid fa-angle-down"></i></label>
-                <label class="accessibility-label-2" for="accessibility-checkbox"><span>Accessibility</span><i class="fa-solid fa-angle-up"></i></label>
-                <div class="accessibility-dropdown">
-                    <p>The museum has wheelchair accessibility ramps. 
-                        <br>
-                        It also has audio guides and braille display signs for the visually impaired.</p>
-                </div>
-            </div>
-
-            <div class="food-div">
-                <input type="checkbox" id="food-checkbox">
-                <label class="food-label-1" for="food-checkbox"><span>Food and drinks</span><i class="fa-solid fa-angle-down"></i></label>
-                <label class="food-label-2" for="food-checkbox"><span>Food and drinks</span><i class="fa-solid fa-angle-up"></i></label>
-                <div class="food-dropdown">
-                    <p>
-                        There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.
-                    </p>
-                </div>
-            </div>
-
-            <div class="shop-div">
-                <input type="checkbox" id="shop-checkbox">
-                <label class="shop-label-1" for="shop-checkbox"><span>Shop</span><i class="fa-solid fa-angle-down"></i></label>
-                <label class="shop-label-2" for="shop-checkbox"><span>Shop</span><i class="fa-solid fa-angle-up"></i></label>
-                <div class="shop-dropdown">
-                    <p>
-                        Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <img class="logo" src="./img/logo-wonderlab.svg" alt="WonderLab logo">
-        <div class="hours">
-            <p class="bold-p">Hours</p>
+        <div class="hours-div">
+          <input type="checkbox" id="hours-checkbox" />
+          <label class="hours-label-1" for="hours-checkbox"
+            ><span>Opening hours</span><i class="fa-solid fa-angle-down"></i
+          ></label>
+          <label class="hours-label-2" for="hours-checkbox"
+            ><span>Opening hours</span><i class="fa-solid fa-angle-up"></i
+          ></label>
+          <div class="hours-dropdown">
             <p>Monday: closed</p>
             <p>Tuesday - Thursday: 10:00 - 16:00</p>
             <p>Friday: 10:00 – 19:00</p>
             <p>Saturday: 9:00 – 16:00</p>
             <p>Sunday: 9:00 – 13:00</p>
-        </div>
-        <div class="location">
-            <p class="bold-p">Location</p>
-            <p>Oxford St, London W1B 3AG,
-                <br>
-                United Kingdom
-            </p>
+          </div>
         </div>
 
+        <div class="accessibility-div">
+          <input type="checkbox" id="accessibility-checkbox" />
+          <label class="accessibility-label-1" for="accessibility-checkbox"
+            ><span>Accessibility</span><i class="fa-solid fa-angle-down"></i
+          ></label>
+          <label class="accessibility-label-2" for="accessibility-checkbox"
+            ><span>Accessibility</span><i class="fa-solid fa-angle-up"></i
+          ></label>
+          <div class="accessibility-dropdown">
+            <p>
+              The museum has wheelchair accessibility ramps.
+              <br />
+              It also has audio guides and braille display signs for the
+              visually impaired.
+            </p>
+          </div>
+        </div>
+
+        <div class="food-div">
+          <input type="checkbox" id="food-checkbox" />
+          <label class="food-label-1" for="food-checkbox"
+            ><span>Food and drinks</span><i class="fa-solid fa-angle-down"></i
+          ></label>
+          <label class="food-label-2" for="food-checkbox"
+            ><span>Food and drinks</span><i class="fa-solid fa-angle-up"></i
+          ></label>
+          <div class="food-dropdown">
+            <p>
+              There is a café attached to the museum where you can get light
+              lunches, soft drinks, coffee, snacks and more.
+            </p>
+          </div>
+        </div>
+
+        <div class="shop-div">
+          <input type="checkbox" id="shop-checkbox" />
+          <label class="shop-label-1" for="shop-checkbox"
+            ><span>Shop</span><i class="fa-solid fa-angle-down"></i
+          ></label>
+          <label class="shop-label-2" for="shop-checkbox"
+            ><span>Shop</span><i class="fa-solid fa-angle-up"></i
+          ></label>
+          <div class="shop-dropdown">
+            <p>
+              Our shop offers a range of memorabilia from the museum as well as
+              great gifts and activity packs that allow you to continue to
+              explore science even after you’ve left the museum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img class="logo" src="./img/logo-wonderlab.svg" alt="WonderLab logo" />
+      <div class="hours">
+        <p class="bold-p">Hours</p>
+        <p>Monday: closed</p>
+        <p>Tuesday - Thursday: 10:00 - 16:00</p>
+        <p>Friday: 10:00 – 19:00</p>
+        <p>Saturday: 9:00 – 16:00</p>
+        <p>Sunday: 9:00 – 13:00</p>
+      </div>
+      <div class="location">
+        <p class="bold-p">Location</p>
+        <p>
+          Oxford St, London W1B 3AG,
+          <br />
+          United Kingdom
+        </p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>

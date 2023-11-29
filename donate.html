@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/stylesheet.css" />
+    <script
+      src="https://kit.fontawesome.com/4c9767c9c5.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Donate to WonderLab</title>
+  </head>
+  <body>
+    <header>
+      <div id="header-background"></div>
+      <a href="./index.html"
+        ><img class="logo" src="./img/logo-wonderlab.svg" alt="WonderLab logo"
+      /></a>
+      <input id="hamburger-checkbox" type="checkbox" />
+      <label for="hamburger-checkbox">
+        <span>Menu</span>
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <div id="close-label">
+        <p>Close</p>
+        <i class="fa-solid fa-xmark"></i>
+      </div>
+
+      <nav class="drop-down-menu">
+        <a href="./explore.html">Explore</a>
+        <a href="./exhibition-spaces.html">Exhibition spaces</a>
+        <a href="./special-events.html"> Special events</a>
+        <a href="./visit.html">Visit</a>
+        <a href="./get-involved.html">Get involved</a>
+        <a href="./contact-page.html">Contact us</a>
+
+        <a id="donate-btn" class="btn" href="./donate.html">Donate</a>
+      </nav>
+    </header>
+    <main class="donate-main">
+      <h1>Make a donation</h1>
+      <form action="./thankyou.html">
+        <div class="choose-amount-container">
+          <div class="fixed-donation-container">
+            <input id="ten-pound-checkbox" type="checkbox" />
+            <label class="ten-pound-label btn" for="ten-pound-checkbox"
+              >10£</label
+            >
+            <input id="fifty-pound-checkbox" type="checkbox" />
+            <label class="fifty-pound-label btn" for="fifty-pound-checkbox"
+              >50£</label
+            >
+            <input id="hundred-pound-checkbox" type="checkbox" />
+            <label class="hundred-pound-label btn" for="hundred-pound-checkbox"
+              >100£</label
+            >
+          </div>
+
+          <div class="other-amount-container">
+            <label class="other-amount-label" for="other-amount">£</label>
+            <input id="other-amount" type="number" placeholder="Other amount" />
+          </div>
+          <div class="monthly">
+            <label for="monthly-checkbox">Make this a MONTHLY DONATION</label>
+            <input id="monthly-checkbox" type="checkbox" />
+          </div>
+        </div>
+
+        <div class="payment-container">
+          <h2>Payment information</h2>
+          <input id="cardnumber" type="number" placeholder="Card number" />
+          <div class="date-cvc-container">
+            <input
+              id="card-date"
+              type="number"
+              placeholder="MM/YY"
+              maxlength="5"
+            />
+            <input id="cvc" type="number" placeholder="CVC" maxlength="3" />
+          </div>
+          <input id="street" type="text" placeholder="Street adress" />
+          <input id="country" type="text" placeholder="Country" />
+          <div class="city-zip-container">
+            <input id="city" type="text" placeholder="City" />
+            <input
+              id="zip"
+              type="number"
+              placeholder="Zip code"
+              maxlength="4"
+            />
+          </div>
+        </div>
+
+        <div class="total-container">
+          <p>Total: 50 £</p>
+          <input class="btn" type="submit" value="Pay" />
+        </div>
+      </form>
+    </main>
+    <footer>
+      <img class="logo" src="./img/logo-wonderlab.svg" alt="WonderLab logo" />
+      <div class="hours">
+        <p class="bold-p">Hours</p>
+        <p>Monday: closed</p>
+        <p>Tuesday - Thursday: 10:00 - 16:00</p>
+        <p>Friday: 10:00 – 19:00</p>
+        <p>Saturday: 9:00 – 16:00</p>
+        <p>Sunday: 9:00 – 13:00</p>
+      </div>
+      <div class="location">
+        <p class="bold-p">Location</p>
+        <p>
+          Oxford St, London W1B 3AG,
+          <br />
+          United Kingdom
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
