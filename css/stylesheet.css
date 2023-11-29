@@ -24,6 +24,7 @@ body{
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
 }
+
 h1, h2, h3{
     font-family: var(--dmsans);
     font-weight: 700;
@@ -34,6 +35,10 @@ p{
     font-family: var(--roboto);
     margin: 0;
     font-size: 20px;
+}
+
+.bold-p{
+    font-weight: 500;
 }
 
 .btn{
@@ -82,7 +87,7 @@ header > a{
     
 }
 
-header > label > p, #close-label p{
+header > label > span, #close-label p{
     font-family: var(--dmsans);
     font-weight: 700;
     font-size: 25px;
@@ -125,7 +130,7 @@ header > label {
 hamburger meny
 ****/
 
-header  a, header label, header input, header div {
+header  a, header input, header div {
     z-index: 90;
 }
 
@@ -381,13 +386,324 @@ main explore
     margin-top: 20px;
 }
 
+/****
+main special events
+****/
+
+#main-special-events{
+    padding: 20px 0 0 0;
+}
+
+#main-special-events > h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.night-at-museum{
+    background-color: var(--beige);
+}
+
+.visiting-professor{
+    background-color: var(--white);
+}
+
+.energeticia{
+    background-color: var(--beige);
+}
+
+
+#main-special-events > div{
+    margin: 0 var(--inline-margin-phone) 20px var(--inline-margin-phone);
+    padding-bottom: 20px;
+}
+
+#main-special-events img{
+    width: 100%
+}
+
+#main-special-events h2, #main-special-events p{
+    text-align: center;
+    margin: 20px 20px 0 20px;
+}
+
+/*visit*/
+.visit-hero img{
+    width: 100%;
+}
+
+.visit-hero h1, .visit-hero p{
+    text-align: center;
+    margin: 20px var(--inline-margin-phone) 0 var(--inline-margin-phone);
+}
+
+.visit-hero p {
+    font-weight: 500;
+}
+
+/*practical info on visit site*/
+
+.practical-info-h2{
+    margin: 20px var(--inline-margin-phone) 0 var(--inline-margin-phone);
+}
+
+.practical-info {
+    display: flex;
+    flex-direction: column;
+    padding: 20px var(--inline-margin-phone) 0 var(--inline-margin-phone);
+}
+
+
+.practical-info  div > label{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--beige);
+    font-size: 22px;
+    font-family: var(--roboto);
+    font-weight: 500;
+}
+
+.practical-info > div > label > i{
+    font-size: 30px;
+}
+
+.practical-info > div > div p{
+    margin-bottom: 10px;
+}
 
 
 
+.practical-info > div > div{
+    padding: 10px 20px 20px 20px;
+    background-color: var(--beige);
+    height: auto;
+    border-radius: 0  0 15px 15px;
+    display: none;
+    flex-direction: column;
+}
+
+.practical-info > div {
+    margin-bottom: 20px;
+}
+
+/*for location*/
+
+.location-dropdown-div-2 > iframe{
+    width: 100%;
+    margin-top: 10px;
+}
+
+#location-checkbox{
+    display: none;
+}
+
+#location-checkbox:checked ~ .location-label-1{
+   display: none;
+}
+
+.location-label-1{
+    display: flex;
+    border-radius: 15px;
+}
+
+.location-label-2{
+    display: none;
+    border-radius: 15px 15px 0 0;
+}
+
+#location-checkbox:checked ~ .location-label-2{
+    display: flex;
+ }
+
+ #location-checkbox:checked ~ #location-dropdown{
+    display: flex;
+ }
+
+/*for price*/
+#price-checkbox{
+    display: none;
+}
+
+#price-checkbox:checked ~ .price-label-1{
+   display: none;
+}
+
+.price-label-1{
+    display: flex;
+    border-radius: 15px;
+}
+
+.price-label-2{
+    display: none;
+    border-radius: 15px 15px 0 0;
+}
+
+#price-checkbox:checked ~ .price-label-2{
+    display: flex;
+ }
+
+ #price-checkbox:checked ~ .price-dropdown{
+    display: flex;
+ }
+
+.price-dropdown > a{
+    align-self: center;
+    margin-top: 20px;
+    width: 160px;
+}
+
+/*opening hours*/
+
+#hours-checkbox{
+    display: none;
+}
+
+#hours-checkbox:checked ~ .hours-label-1{
+   display: none;
+}
+
+.hours-label-1{
+    display: flex;
+    border-radius: 15px;
+}
+
+.hours-label-2{
+    display: none;
+    border-radius: 15px 15px 0 0;
+}
+
+#hours-checkbox:checked ~ .hours-label-2{
+    display: flex;
+ }
+
+ #hours-checkbox:checked ~ .hours-dropdown{
+    display: flex;
+ }
+
+ /*Accessibility*/
+
+ #accessibility-checkbox{
+    display: none;
+}
+
+#accessibility-checkbox:checked ~ .accessibility-label-1{
+   display: none;
+}
+
+.accessibility-label-1{
+    display: flex;
+    border-radius: 15px;
+}
+
+.accessibility-label-2{
+    display: none;
+    border-radius: 15px 15px 0 0;
+}
+
+#accessibility-checkbox:checked ~ .accessibility-label-2{
+    display: flex;
+ }
+
+ #accessibility-checkbox:checked ~ .accessibility-dropdown{
+    display: flex;
+ }
+
+ /*food and drinks*/
+
+ #food-checkbox{
+    display: none;
+}
+
+#food-checkbox:checked ~ .food-label-1{
+   display: none;
+}
+
+.food-label-1{
+    display: flex;
+    border-radius: 15px;
+}
+
+.food-label-2{
+    display: none;
+    border-radius: 15px 15px 0 0;
+}
+
+#food-checkbox:checked ~ .food-label-2{
+    display: flex;
+ }
+
+ #food-checkbox:checked ~ .food-dropdown{
+    display: flex;
+ }
+
+ /*shop*/
+
+ #shop-checkbox{
+    display: none;
+}
+
+#shop-checkbox:checked ~ .shop-label-1{
+   display: none;
+}
+
+.shop-label-1{
+    display: flex;
+    border-radius: 15px;
+}
+
+.shop-label-2{
+    display: none;
+    border-radius: 15px 15px 0 0;
+}
+
+#shop-checkbox:checked ~ .shop-label-2{
+    display: flex;
+ }
+
+ #shop-checkbox:checked ~ .shop-dropdown{
+    display: flex;
+ }
 
 
+ /********
+ Get involved
+ ********/
 
+ .get-involved-hero{
+     background-image: url("../img/get-involved-hero.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     height: 200px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
 
+ .support, .volunteer, .internships{
+     padding: 20px var(--inline-margin-phone) 20px var(--inline-margin-phone);
+     display: flex;
+     flex-direction: column;
+ }
+
+ .volunteer{
+     background-color: var(--beige);
+ }
+
+ .support p, .support h2, .volunteer p, .volunteer h2 , .internships p, .internships h2 {
+     margin-bottom: 20px;
+ }
+
+ .volunteer a, .internships a{
+     align-self: center;
+     width: 160px;
+ }
+
+ .support a{
+     align-self: center;
+ }
 
 /******************************
 
@@ -409,9 +725,7 @@ footer > div > p{
     margin-top: 5px;
 }
 
-.bold-p{
-    font-weight: 700;
-}
+
 
 /******************************
 
@@ -433,7 +747,7 @@ dette er for tablet versjonen
         margin: 20px 0 20px var(--inline-margin-tablet-desktop);
     }
 
-    header > label, #close-label{
+    header > label{
         margin-right: var(--inline-margin-tablet-desktop);
     }
 
@@ -467,15 +781,31 @@ dette er for tablet versjonen
     .for-researchers{
         padding: 20px var(--inline-margin-tablet-desktop);
     }
+
+    #main-special-events > div{
+        margin: 0 var(--inline-margin-tablet-desktop) 20px var(--inline-margin-tablet-desktop);
+    }
+
+    .visit-hero h1, .visit-hero p{
+        margin: 20px var(--inline-margin-tablet-desktop) 0 var(--inline-margin-tablet-desktop);
+    }
+
+    .practical-info-h2{
+        margin: 20px var(--inline-margin-tablet-desktop) 0 var(--inline-margin-tablet-desktop);
+    }
+
+    .practical-info {
+        padding: 20px var(--inline-margin-tablet-desktop) 0 var(--inline-margin-tablet-desktop);
+    }
+
+    .support, .volunteer, .internships{
+        padding: 20px var(--inline-margin-tablet-desktop) 20px var(--inline-margin-tablet-desktop);
+    }
     
     /*footer*/
     footer{
         padding: 40px var(--inline-margin-tablet-desktop);
     }
-
-
-
-
 
 }
 
@@ -491,6 +821,10 @@ dette er for desktop
 
     .logo{
         height:100px;
+    }
+
+    p{
+        font-size: 18px;
     }
 
     /*
@@ -568,9 +902,10 @@ dette er for desktop
     #donate-btn:hover{
         text-decoration: none;
     }
-        /***
-        main index
-        ***/
+
+/***
+main index
+ ***/
 
     .index-hero{
         display: flex;
@@ -593,15 +928,12 @@ dette er for desktop
     
     .hero-del-1 > p{
         margin: 0 50px;
-        font-size: 18px;
     }
     
     .hero-del-1 > a{
     margin: 20px 0;
     }
     
-
-
     .exhibition-cards{
         flex-direction: row;
         justify-content: space-between;
@@ -616,6 +948,7 @@ dette er for desktop
         width: 100%;
         margin-bottom: 20px;
     }
+
     /*index events*/
     .index-event{
         display: flex;
@@ -626,14 +959,13 @@ dette er for desktop
     .events-1, .events-2{
         width: 50%;
     }
+
     .events-1{
         order: 1;
     }
 
     .events-2 > p{
-        font-size: 18px;
-        margin: 10px 20px;
-        
+        margin: 10px 20px;  
     }
     
     .events-2 > h2{
@@ -658,6 +990,7 @@ dette er for desktop
         flex-direction: row;
         margin: 0 var(--inline-margin-tablet-desktop);
     }
+
     .explore-hero-1{
         order: 1;
     }
@@ -677,7 +1010,6 @@ dette er for desktop
     }
     
     .explore-hero-2 > p{
-        font-size: 18px;
         text-align: center;
     }
 
@@ -709,9 +1041,6 @@ dette er for desktop
         grid-area: holiday-club;
     }
 
-    .kids p{
-        font-size: 18px;
-    }
 
 
     
@@ -744,9 +1073,6 @@ dette er for desktop
         padding: 0 20px;
     }
     
-    .teachers-2 p{
-        font-size: 18px;
-    }
 
     /*for researchers*/
     .for-researchers{
@@ -757,9 +1083,6 @@ dette er for desktop
     .researchers-1{
         width: 50%;
        display: grid;
-    
-        
-        
     }
     .researchers-1 img{
         width: 100%;
@@ -768,13 +1091,70 @@ dette er for desktop
     
     .researchers-2{
         width: 50%;
-        padding: 0 20px;
-        
+        padding: 0 20px; 
     }
     
-    .researchers-2 p{
-        font-size: 18px;
+
+    /*special events*/
+    #main-special-events > div{
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 20px 0;
+        padding: 0 var(--inline-margin-tablet-desktop) 0 var(--inline-margin-tablet-desktop);
+        }
+    
+    
+    #main-special-events img{
+        margin: auto;
     }
+    
+    #main-special-events h2, #main-special-events p{
+        margin: 20px;
+    }
+
+    .special-events-1{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .special-events-2{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /*visit*/
+    .visit-hero {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .visit-hero h1{
+     order: -1;
+     margin-bottom: 20px;
+    }
+
+    #location-dropdown{
+        flex-direction: row;
+    }
+
+    .location-dropdown-div-2{
+        width: 60%;
+        margin-top: 0;
+    }
+
+    .location-dropdown-div-1{
+        width: 40%;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    
 
     /*
     footer
@@ -787,17 +1167,9 @@ dette er for desktop
         align-items: flex-start;
     }
 
-    footer > div > p{
-        font-size: 18px;
-    }
-
     .bold-p{
         font-weight: 700;
     }
-
-
-
-
 
 }
 
@@ -807,19 +1179,22 @@ dette er for desktop
         background-color: lightblue;
     }/**/
 
+    p{
+        font-size: 22px;
+    }
+
     
     /*headeren*/
     #donate-btn{
         right: var(--inline-margin-big-desktop);
      }
 
-     .drop-down-menu > a{
-        font-size:22px;
+    .drop-down-menu{
+        margin: 0 var(--inline-margin-big-desktop) 20px var(--inline-margin-big-desktop);
     }
 
-    .drop-down-menu{
-       
-        margin: 0 var(--inline-margin-big-desktop) 20px var(--inline-margin-big-desktop);
+    .drop-down-menu > a{
+        font-size: 22px;
     }
 
     header > a {
@@ -841,7 +1216,6 @@ dette er for desktop
     
     .hero-del-1 > p{
         margin: 0 100px;
-        font-size: 20px;
     }
     
     .hero-del-1 > a{
@@ -851,7 +1225,6 @@ dette er for desktop
     /*index events*/
 
     .events-2 > p{
-        font-size: 20px;
         margin: 10px var(--inline-margin-big-desktop);
     }
 
@@ -866,9 +1239,6 @@ dette er for desktop
         font-size: 50px;
     }
     
-    .explore-hero-2 > p{
-        font-size: 20px;
-    }
 
     /*for kids*/
     .kids{
@@ -880,9 +1250,6 @@ dette er for desktop
      max-width: 470px;
     }
 
-    .kids p{
-        font-size: 20px;
-    }
 
     /*for teachers*/
 
@@ -899,9 +1266,6 @@ dette er for desktop
        justify-content: center;
    }
 
-    .teachers-2 p{
-        font-size: 20px;
-    }
 
     /*for researchers*/
    
@@ -912,9 +1276,6 @@ dette er for desktop
     .researchers-1{
         width: 50%;
        display: grid;
-    
-        
-        
     }
     .researchers-1 img{
         justify-self: center;
@@ -924,21 +1285,67 @@ dette er for desktop
     .researchers-2{
         width: 50%;
         padding: 0 40px;
-        justify-content: center;
-        
+        justify-content: center; 
+    }
+
+    /*special events*/
+    #main-special-events > div{
+        padding: 0 var(--inline-margin-big-desktop) 0 var(--inline-margin-big-desktop);
     }
     
-    .researchers-2 p{
-        font-size: 20px;
+    #main-special-events h2{
+        font-size: 35px;
     }
+
+    #main-special-events p{
+        font-size: 25px;
+    }
+
+    .special-events-1{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .special-events-2{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*visit page*/
+
+    .visit-hero h1, .visit-hero p{
+        margin: 20px var(--inline-margin-big-desktop) 20px var(--inline-margin-big-desktop);
+    }
+
+    .visit-hero p {
+        font-size: 23px;
+    }
+
+    .practical-info-h2{
+        margin: 20px var(--inline-margin-big-desktop) 0 var(--inline-margin-big-desktop);
+    }
+
+    .practical-info {
+        padding: 20px var(--inline-margin-big-desktop) 0 var(--inline-margin-big-desktop);
+    }
+
+    .location-dropdown-div-1 p{
+        margin-left: 40px;
+    }
+
+    /*get involved*/
+    .support, .volunteer, .internships{
+        padding: 20px var(--inline-margin-big-desktop) 20px var(--inline-margin-big-desktop);
+    }
+
     /*footer*/
     footer{
         padding: 40px var(--inline-margin-big-desktop);
     }
 
-    footer > div > p{
-        font-size: 20px;
-    }
 
 
 }
