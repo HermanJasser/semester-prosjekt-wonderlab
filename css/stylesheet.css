@@ -193,10 +193,16 @@ header div {
             main
             
 ******************************/
+#main-index, .main-visit, .all-contact-container, .explore-hero{        
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 
 /****
 main index
 ****/
+
 
 /*hero*/
 .hero-del-1 {
@@ -259,6 +265,10 @@ main index
 }
 
 /*Night at the museum*/
+
+.index-event{
+    padding: 0 var(--inline-margin-phone);
+}
 .events-1 > img {
   width: 130%;
 }
@@ -277,7 +287,7 @@ main index
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 var(--inline-margin-phone);
+  
 }
 
 .events-2 > a {
@@ -290,6 +300,7 @@ main explore
 ****/
 
 /*hero*/
+
 .explore-hero-1 > img {
   width: 100%;
 }
@@ -308,8 +319,15 @@ main explore
 }
 
 /*for kids*/
+
+.kids-background{
+    background-color: var(--beige);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
 .kids {
-  width: 100vw;
+  width: 100%;
   padding: 20px var(--inline-margin-phone);
   background-color: var(--beige);
   margin-top: 20px;
@@ -338,7 +356,7 @@ main explore
 
 /* for teachers*/
 .for-teachers {
-  padding: 20px var(--inline-margin-phone);
+  margin: 20px var(--inline-margin-phone);
 }
 
 .teachers-2 {
@@ -499,6 +517,8 @@ main special events
 
 .location-dropdown-div-2 > iframe {
   width: 100%;
+  height: 450px;
+   border: 0;
   margin-top: 10px;
 }
 
@@ -1101,16 +1121,16 @@ dette er for tablet versjonen
       var(--inline-margin-tablet-desktop);
   }
 
-  .events-2 {
-    margin: 0 var(--inline-margin-tablet-desktop);
-  }
+  .index-event{
+    padding: 0 var(--inline-margin-tablet-desktop);
+}
 
   .explore-hero-2 {
     margin: 0 var(--inline-margin-tablet-desktop);
   }
 
   .for-teachers {
-    padding: 20px var(--inline-margin-tablet-desktop);
+    margin: 20px var(--inline-margin-tablet-desktop);
   }
 
   .kids {
@@ -1312,6 +1332,7 @@ main index
     display: flex;
     flex-direction: row;
     margin-bottom: 20px;
+    align-items: center;
   }
 
   .events-1,
@@ -1334,7 +1355,7 @@ main index
   .events-2 {
     flex-direction: column;
     justify-content: center;
-    margin: 0;
+    margin: 0 10px;
   }
 
   .events-2 > a {
@@ -1374,6 +1395,7 @@ main index
   /*for kids*/
 
   .kids {
+      max-width: 1400px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -1625,25 +1647,35 @@ main index
 
   /*index events*/
 
-  .events-2 > p {
-    margin: 10px var(--inline-margin-big-desktop);
-  }
+  .index-event{
+    padding: 0 var(--inline-margin-big-desktop);
+}
 
   /*main explore*/
+#main-explore{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
   .explore-hero {
     margin: 0 var(--inline-margin-big-desktop);
+    
   }
   .explore-hero-2 {
-    padding: 0 60px;
+    padding: 0 50px;
   }
   .explore-hero-2 > h1 {
-    font-size: 50px;
+    font-size: 45px;
   }
 
   /*for kids*/
   .kids {
-    padding: 20px var(--inline-margin-big-desktop);
+    padding: 0;
     column-gap: 100px;
+  }
+  .kids-background{
+    padding: 20px var(--inline-margin-big-desktop);
   }
 
   .kids > img {
@@ -1653,7 +1685,8 @@ main index
   /*for teachers*/
 
   .for-teachers {
-    padding: 20px var(--inline-margin-big-desktop);
+    margin: 20px var(--inline-margin-big-desktop);
+    max-width: 1400px;
   }
 
   .teachers-1 img {
@@ -1667,8 +1700,19 @@ main index
 
   /*for researchers*/
 
+  .researchers-background{
+      background-color: var(--beige);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 20px var(--inline-margin-big-desktop);
+      margin-bottom: 20px;
+  }
+
   .for-researchers {
-    padding: 20px var(--inline-margin-big-desktop);
+      max-width: 1400px;
+      padding: 0;
+      margin-bottom: 0;
   }
   .researchers-1 {
     width: 50%;
@@ -1689,6 +1733,7 @@ main index
   #main-special-events > div {
     padding: 0 var(--inline-margin-big-desktop) 0
       var(--inline-margin-big-desktop);
+      justify-content: center;
   }
 
   #main-special-events h2 {
@@ -1701,6 +1746,7 @@ main index
 
   .special-events-1 {
     width: 40%;
+    max-width: 560px;
     display: flex;
     justify-content: center;
     padding: 20px 0;
@@ -1708,6 +1754,7 @@ main index
 
   .special-events-2 {
     width: 60%;
+    max-width: 840px;
     display: flex;
     flex-direction: column;
     justify-content: center;
