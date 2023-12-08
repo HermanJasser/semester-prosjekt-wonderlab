@@ -368,7 +368,8 @@ main explore
   margin: 20px var(--inline-margin-phone);
 }
 
-.teachers-1 img{
+.teachers-1 > img{
+  width: 100%;
   aspect-ratio: 61/50;
 }
 
