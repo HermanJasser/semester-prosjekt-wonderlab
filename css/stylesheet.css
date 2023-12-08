@@ -61,6 +61,7 @@ p {
 }
 .logo {
   height: 80px;
+  aspect-ratio: 54/47;
 }
 
 
@@ -309,6 +310,7 @@ main explore
 
 .explore-hero-1 > img {
   width: 100%;
+  aspect-ratio: 800/533;
 }
 
 .explore-hero-2 {
@@ -343,6 +345,7 @@ main explore
 .kids > img {
   width: 100%;
   margin-bottom: 20px;
+  aspect-ratio: 640/341;
 }
 
 .for-kids-text {
@@ -363,6 +366,10 @@ main explore
 /* for teachers*/
 .for-teachers {
   margin: 20px var(--inline-margin-phone);
+}
+
+.teachers-1 img{
+  aspect-ratio: 61/50;
 }
 
 .teachers-2 {
@@ -391,6 +398,7 @@ main explore
 
 .researchers-1 img {
   width: 100%;
+  aspect-ratio: 1280/847;
 }
 
 .researchers-2 {
