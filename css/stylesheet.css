@@ -331,12 +331,12 @@ main explore
     width: 100vw;
     display: flex;
     justify-content: center;
+    margin-top: 20px;
 }
 .kids {
   width: 100%;
   padding: 20px var(--inline-margin-phone);
   background-color: var(--beige);
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -1482,6 +1482,7 @@ main index
   .researchers-1 {
     width: 50%;
     display: grid;
+    order: 1;
   }
   .researchers-1 img {
     width: 100%;
