@@ -235,6 +235,7 @@ main index
 
 .hero-del-2 > img {
   width: 100%;
+  aspect-ratio: 1920/1277;
 }
 
 /*Exhibition spaces*/
@@ -264,6 +265,7 @@ main index
 
 .card > img {
   width: 100%;
+  aspect-ratio: 353/215;
   margin-bottom: 20px;
 }
 
@@ -278,6 +280,7 @@ main index
 }
 .events-1 > img {
   width: 130%;
+  aspect-ratio: 80/41;
 }
 
 .events-1 {
