@@ -64,7 +64,6 @@ p {
   aspect-ratio: 54/47;
 }
 
-
 /******************************
 
             header
@@ -175,8 +174,8 @@ header div {
   margin: 20px 0 0 20px;
 }
 
-#active{
-    text-decoration: underline;
+#active {
+  text-decoration: underline;
 }
 
 .drop-down-menu > a:hover {
@@ -200,16 +199,17 @@ header div {
             main
             
 ******************************/
-#main-index, .main-visit, .all-contact-container, .explore-hero{        
-    max-width: 1400px;
-    margin: 0 auto;
+#main-index,
+.main-visit,
+.all-contact-container,
+.explore-hero {
+  max-width: 1400px;
+  margin: 0 auto;
 }
-
 
 /****
 main index
 ****/
-
 
 /*hero*/
 .hero-del-1 {
@@ -275,8 +275,8 @@ main index
 
 /*Night at the museum*/
 
-.index-event{
-    padding: 0 var(--inline-margin-phone);
+.index-event {
+  padding: 0 var(--inline-margin-phone);
 }
 .events-1 > img {
   width: 130%;
@@ -297,7 +297,6 @@ main index
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .events-2 > a {
@@ -331,12 +330,12 @@ main explore
 
 /*for kids*/
 
-.kids-background{
-    background-color: var(--beige);
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+.kids-background {
+  background-color: var(--beige);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 .kids {
   width: 100%;
@@ -371,7 +370,7 @@ main explore
   margin: 20px var(--inline-margin-phone);
 }
 
-.teachers-1 > img{
+.teachers-1 > img {
   width: 100%;
   aspect-ratio: 61/50;
 }
@@ -421,21 +420,20 @@ main explore
   margin-top: 20px;
 }
 
-
 /*******
 main exhibition spaces
 *******/
 
-.main-exhibition{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1400px;
-    margin: 0 auto;
+.main-exhibition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.main-exhibition h1{
-    margin: 20px 0;
+.main-exhibition h1 {
+  margin: 20px 0;
 }
 
 /****
@@ -480,13 +478,11 @@ main special events
 
 /*visit*/
 
-
-
 .visit-hero {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 .visit-hero img {
   width: 100%;
@@ -513,8 +509,8 @@ main special events
 .practical-info {
   display: flex;
   flex-direction: column;
-  padding: 20px var(--inline-margin-phone) 0 var(--inline-margin-phone);
-  max-width: 1200px;
+  margin: 20px var(--inline-margin-phone) 0 var(--inline-margin-phone);
+  max-width: 800px;
 }
 
 .practical-info div > label {
@@ -554,7 +550,7 @@ main special events
 .location-dropdown-div-2 > iframe {
   width: 100%;
   height: 450px;
-   border: 0;
+  border: 0;
   margin-top: 10px;
 }
 
@@ -1157,9 +1153,9 @@ dette er for tablet versjonen
       var(--inline-margin-tablet-desktop);
   }
 
-  .index-event{
+  .index-event {
     padding: 0 var(--inline-margin-tablet-desktop);
-}
+  }
 
   .explore-hero-2 {
     margin: 0 var(--inline-margin-tablet-desktop);
@@ -1194,7 +1190,7 @@ dette er for tablet versjonen
   }
 
   .practical-info {
-    padding: 20px var(--inline-margin-tablet-desktop) 0
+    margin: 20px var(--inline-margin-tablet-desktop) 0
       var(--inline-margin-tablet-desktop);
   }
 
@@ -1431,7 +1427,7 @@ main index
   /*for kids*/
 
   .kids {
-      max-width: 1400px;
+    max-width: 1400px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
@@ -1508,10 +1504,9 @@ main index
 
   /*exhibition spaces*/
 
-  #exhibition-page-cards{
-      flex-wrap: wrap;
+  #exhibition-page-cards {
+    flex-wrap: wrap;
   }
-
 
   /*special events*/
   #main-special-events > div {
@@ -1691,20 +1686,19 @@ main index
 
   /*index events*/
 
-  .index-event{
+  .index-event {
     padding: 0 var(--inline-margin-big-desktop);
-}
+  }
 
   /*main explore*/
-#main-explore{
+  #main-explore {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
   .explore-hero {
     margin: 0 var(--inline-margin-big-desktop);
-    
   }
   .explore-hero-2 {
     padding: 0 50px;
@@ -1718,7 +1712,7 @@ main index
     padding: 0;
     column-gap: 100px;
   }
-  .kids-background{
+  .kids-background {
     padding: 20px var(--inline-margin-big-desktop);
   }
 
@@ -1744,19 +1738,19 @@ main index
 
   /*for researchers*/
 
-  .researchers-background{
-      background-color: var(--beige);
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding: 20px var(--inline-margin-big-desktop);
-      margin-bottom: 20px;
+  .researchers-background {
+    background-color: var(--beige);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px var(--inline-margin-big-desktop);
+    margin-bottom: 20px;
   }
 
   .for-researchers {
-      max-width: 1400px;
-      padding: 0;
-      margin-bottom: 0;
+    max-width: 1400px;
+    padding: 0;
+    margin-bottom: 0;
   }
   .researchers-1 {
     width: 50%;
@@ -1777,7 +1771,7 @@ main index
   #main-special-events > div {
     padding: 0 var(--inline-margin-big-desktop) 0
       var(--inline-margin-big-desktop);
-      justify-content: center;
+    justify-content: center;
   }
 
   #main-special-events h2 {
@@ -1821,7 +1815,7 @@ main index
   }
 
   .practical-info {
-    padding: 20px var(--inline-margin-big-desktop) 0
+    margin: 20px var(--inline-margin-big-desktop) 0
       var(--inline-margin-big-desktop);
   }
 
